@@ -15,14 +15,25 @@ body{
     padding-top: 10%;
 }
 #background {
-    background-image: url(./img/pexels-cátia-matos-1072179-_1_.png);
+    background-image: url(./img/lake.jpg);
     background-size:cover;
     position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-#blur{
-    height: 100vh;
-	width: 100%;
-    
+  .mainbox {
+    position: absolute;
+    list-style-type: none;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.nav {
+    display: block;
+    text-decoration: none;
 }
 .left-ctn, .right-ctn{
     width: 50%;
@@ -32,25 +43,6 @@ body{
 }
 .right-ctn{
     float: right;
-}
-.mainbox {
-    position: absolute;
-    /* background-color: aliceblue; */
-    list-style-type: none;
-    
-    top: 0;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    /* box-shadow:0 0 10px rgba(0,0,0,0.3) ;
-    background: rgba(255, 255, 255, 0);  */
-    /* backdrop-filter: blur(none); */
-}
-.nav {
-    display: block;
-    text-decoration: none;
 }
 .subf{
     width: 100%;
@@ -68,25 +60,21 @@ a{
     padding: 24px;
     display: block;
 }
-.fbic{
-    color: blue;
+.icon{
     font-size: 16px;
     padding: 2px 4px;
+}
+.fbic{
+    color: blue;
 }
 .igic{
     color: pink;
-    font-size: 16px;
-    padding: 2px 4px;
 }
 .ghic{
     color: rgb(150, 150, 150);
-    font-size: 16px;
-    padding: 2px 4px;
 }
 .mic{
     color: red;
-    font-size: 16px;
-    padding: 2px 4px;
 }
 .subf .git, .subf .email{
     padding: 10px 24px;
@@ -97,7 +85,6 @@ a{
     text-decoration: none;
     color: antiquewhite;
     font-weight: bold;
-    /* font-size: 20px; */
     position: relative;
     padding: 10px;
   }
